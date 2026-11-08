@@ -1,0 +1,48 @@
+# Visual Studio / .NET build outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+# Compiled binaries and native libraries (distributed via GitHub Releases)
+*.exe
+*.dll
+*.zip
+*.7z
+*.rar
+*.lnk
+
+# Local logs and crashes
+*.log
+framegen_log*.txt
+panel-crash.txt
+crash_report*.txt
+
+# Local application settings
+settings.ini
+fgl_settings.ini
+
+# Temporary and system files
+*.tmp
+*.bak
+Thumbs.db
+[Dd]esktop.ini
+
+# Workspace backup and archive directories
+fgarchive/
+FGLApp2/
+FGMEngineClaude/
+ver1/
+_backup/
+_tools/
+FGLrel/
+v2/
+run_fgl.cmd
+
+push.bat
