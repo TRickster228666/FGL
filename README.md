@@ -72,8 +72,8 @@ git clone https://github.com/TRickster228666/FGL.git
 cd FGL
 
 # Build both Engine and UI
-dotnet build src/FGMEngine/FGMEngine.csproj -c Release
-dotnet build src/FGLApp/FGLApp.csproj -c Release
+dotnet build src/FGMEngine/FrameGenLive.csproj -c Release
+dotnet build src/FGLApp/FrameGenLiveApp.csproj -c Release
 ```
 
 ---

@@ -2,16 +2,16 @@
 echo Building FrameGenLive from source...
 echo.
 
-dotnet build src\FGMEngine\FGMEngine.csproj -c Release
+dotnet build src\FGMEngine\FrameGenLive.csproj -c Release
 if %ERRORLEVEL% NEQ 0 (
-    echo Error building FGMEngine!
+    echo Error building FrameGenLive Engine!
     pause
     exit /b %ERRORLEVEL%
 )
 
-dotnet build src\FGLApp\FGLApp.csproj -c Release
+dotnet build src\FGLApp\FrameGenLiveApp.csproj -c Release
 if %ERRORLEVEL% NEQ 0 (
-    echo Error building FGLApp!
+    echo Error building FrameGenLiveApp UI!
     pause
     exit /b %ERRORLEVEL%
 )
