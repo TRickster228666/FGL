@@ -71,9 +71,13 @@ Prerequisites: [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 git clone https://github.com/TRickster228666/FGL.git
 cd FGL
 
-# Build both Engine and UI
-dotnet build src/FGMEngine/FrameGenLive.csproj -c Release
-dotnet build src/FGLApp/FrameGenLiveApp.csproj -c Release
+# Run one-click build script (compiles Engine & UI to bin/ and starts the app)
+build.bat
+```
+Or build manually:
+```bash
+dotnet build src/FGMEngine/FrameGenLive.csproj -c Release -o bin
+dotnet build src/FGLApp/FrameGenLiveApp.csproj -c Release -o bin
 ```
 
 ---

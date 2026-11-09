@@ -1940,13 +1940,22 @@ namespace FrameGenLiveApp
 
             string[] candidates = new[]
             {
-                Path.GetFullPath(Path.Combine(baseDir, @"..\..\FGMEngine\bin\Release\net8.0-windows\v2_bin")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\..\FGMEngine\bin\Release\net8.0-windows")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\FGMEngine\bin\Release\net8.0-windows")),
                 Path.GetFullPath(Path.Combine(baseDir, @"..\..\FGMEngine\bin\Release\net8.0-windows")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\FGMEngine\bin\Release\net8.0-windows")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\..\bin")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\bin")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\..\bin")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\bin")),
+                Path.GetFullPath(Path.Combine(baseDir, @"bin")),
+                Path.GetFullPath(Path.Combine(baseDir, @"..\..\FGMEngine\bin\Release\net8.0-windows\v2_bin")),
                 Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\v2\FGMEngine\bin\Release\net8.0-windows\v2_bin")),
                 Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\v2\FGMEngine\bin\Release\net8.0-windows")),
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "fg", "v2", "FGMEngine", "bin", "Release", "net8.0-windows", "v2_bin"),
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "fg", "v2", "FGMEngine", "bin", "Release", "net8.0-windows"),
-                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "fg", "FGMEngine", "bin", "Release", "net8.0-windows")
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "fg", "FGMEngine", "bin", "Release", "net8.0-windows"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "fg", "FGLrel")
             };
 
             foreach (var cand in candidates)
